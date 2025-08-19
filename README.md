@@ -127,3 +127,133 @@ doWeatherCycle = false
 **⭐ Нравится мод? Поставьте звезду на GitHub!**
 
 *Создано с любовью к сообществу Minecraft 1.7.10*
+
+# Game Rules Manager - Smart Rules Management for Minecraft 1.7.10
+
+## 🎯 What is this mod?
+
+**Game Rules Manager** is an intelligent mod for Minecraft 1.7.10 that automatically configures game rules upon first world entry and remembers these settings forever. No more manual `/gamerule` commands every time!
+
+## ✨ Features
+
+### 🚀 Automatic Application
+- Rules applied **only once** during initial world creation
+- Mod remembers which worlds have already been processed
+- Fully automatic - just create a world and play
+
+### ⚡ Instant Control
+- `/gamerules reload` - apply rules if not already applied
+- `/gamerules reload force` - force reapply rules
+- `/gamerules list` - view processed worlds list
+
+### 📁 Simple Configuration
+- **vanilla_rules.txt** - all vanilla Minecraft rules
+- **modded_rules.txt** - custom rules for any mods
+- Human-readable format - simple text files
+- Detailed comments and examples
+
+### 🛡️ Reliable Operation
+- State preservation between game sessions
+- Protection against duplicate rule application
+- Compatibility with all 1.7.10 mods
+
+## 🎮 How to Use
+
+### Quick Start
+1. Install mod into `mods/` folder
+2. Launch game - mod will create configs automatically
+3. Edit files in `config/GameRulesMod/`
+4. Create new world - rules will apply automatically!
+
+### Configuration Examples
+
+**vanilla_rules.txt:**
+```ini
+keepInventory = true
+mobGriefing = false
+doFireTick = false
+```
+
+**modded_rules.txt:**
+```ini
+AllowFlight = true
+NoHungerLoss = false
+CustomSpawnRate = 2
+```
+
+### Server Commands
+```mcfunction
+/gamerules reload      # Apply rules if needed
+/grules reload force   # Force reapply rules
+/gamerules list        # Show processed worlds
+```
+
+## 🔧 Who is this mod for?
+
+### 🎪 Server Owners
+- Standardize rules across all worlds
+- Avoid manual configuration for each player
+- Easily modify rules through configs
+
+### 🗺️ Map Makers
+- Guarantee intended rules for your adventure
+- Don't rely on players' memory
+- Professional rule setup approach
+
+### 🏠 Single Players
+- Configure rules once and forever
+- Forget manual commands on each entry
+- Create perfect gaming environment
+
+## 🌟 Key Benefits
+
+- **Stealth operation** - no performance impact
+- **Ultra-reliable** - tested on various setups
+- **Simple as door** - intuitive interface
+- **Powerful** - supports any rule combinations
+
+## 📦 Installation
+
+1. Download latest version from [Releases](https://github.com/yourusername/GameRulesMod/releases)
+2. Place `GameRulesMod-1.1.jar` into `mods/` folder
+3. Launch Minecraft with Forge 1.7.10
+
+## 🤝 Compatibility
+
+- ✅ Minecraft 1.7.10
+- ✅ Forge 10.13.4.1614
+- ✅ All 1.7.10 mods
+- ✅ Server installations (not exactly verified)
+- ✅ Singleplayer
+
+## 💡 Usage Ideas
+
+### For PvP Servers
+```ini
+keepInventory = false
+naturalRegeneration = false
+```
+
+### For Peaceful Servers
+```ini
+mobGriefing = false
+keepInventory = true
+```
+
+### For Adventure Maps
+```ini
+doDaylightCycle = false
+doWeatherCycle = false
+```
+
+## 🚨 Important Notes
+
+- Rules apply only to **new worlds**
+- Use `/gamerules reload force` for existing worlds
+- Config changes require rules reload
+
+---
+
+**⭐ Like this mod? Give it a star on GitHub!**
+
+*Crafted with love for Minecraft 1.7.10 community*
